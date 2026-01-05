@@ -1,0 +1,279 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Nov  8 19:09:52 2025
+| Host         : vetri-laptop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   210 |
+| Unused register locations in slices containing registers |   170 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      8 |           41 |
+|     10 |            5 |
+|     12 |            6 |
+|     14 |            6 |
+|    16+ |          150 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             384 |          103 |
+| No           | No                    | Yes                    |             526 |           97 |
+| No           | Yes                   | No                     |             378 |           78 |
+| Yes          | No                    | No                     |            6700 |         1668 |
+| Yes          | No                    | Yes                    |             886 |          193 |
+| Yes          | Yes                   | No                     |             620 |          115 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+-----------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|   Clock Signal   |                             Enable Signal                             |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++------------------+-----------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/k2_00_0                                  | msemd/LED_OBUF[0]                                    |                1 |              2 |
+| ~clk6p25m_BUFG   |                                                                       |                                                      |                1 |              2 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/point_editor/slow_tick                           | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/point_editor/mag_y2                              | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/point_editor/mag_x2                              | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG |                                                                       | msemd/Inst_Ps2Interface/clk_inter0                   |                1 |              8 |
+|  CLOCK_IBUF_BUFG |                                                                       | msemd/Inst_Ps2Interface/data_inter0                  |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/point_editor/mag_y0                              | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/linreg_plot/FSM_sequential_main_state[1]_i_1_n_0 | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/point_editor/mag_x1                              | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG |                                                                       | md0/COUNT[3]_i_1_n_0                                 |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/point_editor/mag_x0                              | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x2mod/b[3]_i_1_n_0                       | msemd/LED_OBUF[0]                                    |                4 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x3mod/slow_tick                          | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x3mod/d[3]_i_1__4_n_0                    | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x3mod/c[3]_i_1__4_n_0                    | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | nicmodule/adj                                                         |                                                      |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x3mod/b[3]_i_1__2_n_0                    | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x3mod/a[3]_i_1__0_n_0                    | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x2mod/d[3]_i_1__0_n_0                    | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x2mod/c[3]_i_1__0_n_0                    | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x3mod/a[3]_i_1_n_0                       | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/z_num_next                               | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/z_den_next                               | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/FSM_onehot_main_state[2]_i_1_n_0         | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x2mod/slow_tick                          | msemd/LED_OBUF[0]                                    |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/xmod/d[3]_i_1_n_0                        | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/xmod/slow_tick                           | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/xmod/c[3]_i_1_n_0                        | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x3mod/slow_tick                          | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x3mod/c[3]_i_1__1_n_0                    | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/point_editor/mag_y1                              | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x3mod/b[3]_i_1__0_n_0                    | msemd/LED_OBUF[0]                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_coef/x3mod/d[3]_i_1__1_n_0                    | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/xmod/slow_tick                           | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/xmod/d[3]_i_1__2_n_0                     | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/xmod/c[3]_i_1__2_n_0                     | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x2mod/slow_tick                          | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | aidanmodule/ms_tick_reg_n_0                                           | pb_IBUF[0]                                           |                4 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x2mod/d[3]_i_1__3_n_0                    | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/shift_frame                                   | msemd/Inst_Ps2Interface/reset_bit_count              |                2 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x2mod/b[3]_i_1__1_n_0                    | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn2_coef/x2mod/c[3]_i_1__3_n_0                    | msemd/LED_OBUF[0]                                    |                3 |              8 |
+|  clk6p25m_BUFG   |                                                                       | oledmd/pix_out_reg[6]_4[0]                           |                2 |             10 |
+|  CLOCK_IBUF_BUFG | nicmodule/ui_state[4]_i_2_n_0                                         | nicmodule/ui_state0                                  |                4 |             10 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/point_editor/sel                                 | msemd/LED_OBUF[0]                                    |                3 |             10 |
+|  CLOCK_IBUF_BUFG | ryanmodule/u_click/argand_imag_reg[0][0]                              |                                                      |                2 |             10 |
+|  CLOCK_IBUF_BUFG | ryanmodule/u_click_r/argand_real_reg[0][0]                            |                                                      |                2 |             10 |
+|  CLOCK_IBUF_BUFG |                                                                       | msemd/SS[0]                                          |                3 |             12 |
+|  CLOCK_IBUF_BUFG | ryanmodule/u_click/coef_b                                             |                                                      |                3 |             12 |
+|  CLOCK_IBUF_BUFG | ryanmodule/u_click/coef_c                                             |                                                      |                3 |             12 |
+|  CLOCK_IBUF_BUFG | main_menu_inst/box_y[3][5]_i_1_n_0                                    | msemd/LED_OBUF[0]                                    |                4 |             12 |
+|  CLOCK_IBUF_BUFG | main_menu_inst/box_x                                                  | msemd/LED_OBUF[0]                                    |                2 |             12 |
+|  CLOCK_IBUF_BUFG | ryanmodule/u_click_r/E[0]                                             |                                                      |                2 |             12 |
+|  CLOCK_IBUF_BUFG | main_menu_inst/box_x[2][6]_i_1_n_0                                    | msemd/LED_OBUF[0]                                    |                4 |             14 |
+|  CLOCK_IBUF_BUFG |                                                                       | msemd/SR[0]                                          |                6 |             14 |
+|  CLOCK_IBUF_BUFG | nicmodule/acc_mag[6]_i_1_n_0                                          |                                                      |                6 |             14 |
+|  CLOCK_IBUF_BUFG | main_menu_inst/box_x[1][6]_i_1_n_0                                    | msemd/LED_OBUF[0]                                    |                2 |             14 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/right_down_reg                                |                                                      |                2 |             14 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0                  | msemd/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                2 |             14 |
+|  CLOCK_IBUF_BUFG | nicmodule/matA[0][0][7]_i_1_n_0                                       |                                                      |                5 |             16 |
+|  CLOCK_IBUF_BUFG | nicmodule/matA[0][1][7]_i_1_n_0                                       |                                                      |                6 |             16 |
+|  CLOCK_IBUF_BUFG | nicmodule/matB[1][0][7]_i_1_n_0                                       |                                                      |                6 |             16 |
+|  CLOCK_IBUF_BUFG | aidanmodule/history                                                   |                                                      |                3 |             16 |
+|  CLOCK_IBUF_BUFG | aidanmodule/history[1][7]_i_1_n_0                                     |                                                      |                4 |             16 |
+|  CLOCK_IBUF_BUFG | nicmodule/matA[1][1][7]_i_1_n_0                                       |                                                      |                5 |             16 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/z_num0                                   | msemd/LED_OBUF[0]                                    |                1 |             16 |
+|  CLOCK_IBUF_BUFG | nicmodule/matA[1][0][7]_i_1_n_0                                       |                                                      |                6 |             16 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/load_rx_data                                  |                                                      |                2 |             16 |
+|  CLOCK_IBUF_BUFG | nicmodule/matB[1][1][7]_i_1_n_0                                       |                                                      |                6 |             16 |
+|  CLOCK_IBUF_BUFG | nicmodule/matB[0][0][7]_i_1_n_0                                       |                                                      |                7 |             16 |
+|  CLOCK_IBUF_BUFG | nicmodule/matB[0][1][7]_i_1_n_0                                       |                                                      |                6 |             16 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/y_inc_reg[0]                                  |                                                      |                4 |             16 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/x_inc_reg[0]                                  |                                                      |                2 |             16 |
+|  CLOCK_IBUF_BUFG | msemd/write_data                                                      |                                                      |                4 |             16 |
+|  CLOCK_IBUF_BUFG |                                                                       | pb_IBUF[0]                                           |                5 |             16 |
+|  clk6p25m_BUFG   |                                                                       | nicmodule/SS[0]                                      |                6 |             18 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/frame[9]_i_1_n_0                              |                                                      |                2 |             20 |
+|  CLOCK_IBUF_BUFG | ryanmodule/u_click/E[0]                                               |                                                      |                4 |             20 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0                  | msemd/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                3 |             22 |
+|  CLOCK_IBUF_BUFG | msemd/x_new_reg_n_0                                                   |                                                      |                6 |             24 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/linreg_plot/calc_state[11]_i_1_n_0               | msemd/LED_OBUF[0]                                    |                4 |             24 |
+|  CLOCK_IBUF_BUFG | msemd/y_new_reg_n_0                                                   |                                                      |                5 |             24 |
+|  CLOCK_IBUF_BUFG | msemd/E[0]                                                            | msemd/LED_OBUF[0]                                    |                4 |             26 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/linreg_plot/temp1_wide[22]_i_1_n_0               | msemd/LED_OBUF[0]                                    |                8 |             26 |
+|  CLOCK_IBUF_BUFG | msemd/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0                  | msemd/Inst_Ps2Interface/clear                        |                4 |             28 |
+|  CLOCK_IBUF_BUFG |                                                                       | aidanmodule/ms_counter[16]_i_1_n_0                   |                4 |             32 |
+|  CLOCK_IBUF_BUFG |                                                                       | nicmodule/rng_init                                   |                8 |             32 |
+|  CLOCK_IBUF_BUFG | nicmodule/det_val[15]_i_2_n_0                                         | nicmodule/det_val[15]_i_1_n_0                        |                4 |             32 |
+| ~clk6p25m_BUFG   |                                                                       | msemd/LED_OBUF[0]                                    |                5 |             34 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/E[0]                                     | msemd/LED_OBUF[0]                                    |               11 |             40 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/eqn1_done_rise                                     | msemd/LED_OBUF[0]                                    |               10 |             40 |
+| ~clk6p25m_BUFG   | oledmd/delay[0]_i_1_n_0                                               | msemd/LED_OBUF[0]                                    |                5 |             40 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/linreg_plot/slope[21]_i_1_n_0                    | msemd/LED_OBUF[0]                                    |                8 |             44 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/compute_x[6]_i_1_n_0                     | msemd/LED_OBUF[0]                                    |               11 |             44 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/linreg_plot/intercept0                           | msemd/LED_OBUF[0]                                    |                6 |             44 |
+|  CLOCK_IBUF_BUFG |                                                                       | msemd/reset_timeout_cnt_reg_n_0                      |                6 |             48 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/linreg_plot/temp20                               | msemd/LED_OBUF[0]                                    |               10 |             52 |
+|  CLOCK_IBUF_BUFG |                                                                       | msemd/reset_periodic_check_cnt__0                    |                7 |             52 |
+|  CLOCK_IBUF_BUFG | nicmodule/adj                                                         | nicmodule/adj[1][1][10]_i_1_n_0                      |               15 |             60 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[26][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[29][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[34][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[75][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[80][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[81][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[69][15]_i_1_n_0                  |                                                      |               20 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[83][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[50][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[63][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[65][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[76][15]_i_1_n_0                  |                                                      |               23 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[72][15]_i_1_n_0                  |                                                      |               20 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[73][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[4][15]_i_1_n_0                   |                                                      |               12 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[48][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[54][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[61][15]_i_1_n_0                  |                                                      |               14 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[62][15]_i_1_n_0                  |                                                      |               12 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[66][15]_i_1_n_0                  |                                                      |               21 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[47][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[60][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[67][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[6][15]_i_1_n_0                   |                                                      |               12 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[70][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[74][15]_i_1_n_0                  |                                                      |               21 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[57][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[56][15]_i_1_n_0                  |                                                      |               20 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[64][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[68][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[77][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[46][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[55][15]_i_1_n_0                  |                                                      |               14 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[52][15]_i_1_n_0                  |                                                      |               13 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[59][15]_i_1_n_0                  |                                                      |               14 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[71][15]_i_1_n_0                  |                                                      |               20 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[51][15]_i_1_n_0                  |                                                      |               14 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[5][15]_i_1_n_0                   |                                                      |               11 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[78][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[79][15]_i_1_n_0                  |                                                      |               20 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[7][15]_i_1_n_0                   |                                                      |               13 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[49][15]_i_1_n_0                  |                                                      |               13 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[58][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[53][15]_i_1_n_0                  |                                                      |               14 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[82][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[86][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[90][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[8][15]_i_1_n_0                   |                                                      |               12 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[85][15]_i_1_n_0                  |                                                      |               13 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[92][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[91][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[88][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[89][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[95][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[84][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[87][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[93][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[9][15]_i_1_n_0                   |                                                      |               11 |             64 |
+|  CLOCK_IBUF_BUFG | nicmodule/matA_saved[1][1][7]_i_2_n_0                                 | nicmodule/matA_saved[1][1][7]_i_1_n_0                |               19 |             64 |
+|  CLOCK_IBUF_BUFG | nicmodule/matAdd                                                      | nicmodule/matAdd[1][1][7]_i_1_n_0                    |                8 |             64 |
+|  CLOCK_IBUF_BUFG | nicmodule/matMul[1][1][7]_i_2_n_0                                     | nicmodule/matMul[1][1][7]_i_1_n_0                    |                8 |             64 |
+|  CLOCK_IBUF_BUFG | nicmodule/matSub                                                      | nicmodule/matSub[1][1][7]_i_1_n_0                    |                8 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[11][15]_i_1_n_0                  |                                                      |               10 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[10][15]_i_1_n_0                  |                                                      |               13 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[14][15]_i_1_n_0                  |                                                      |               11 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[15][15]_i_1_n_0                  |                                                      |               11 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[18][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[19][15]_i_1_n_0                  |                                                      |               14 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[12][15]_i_1_n_0                  |                                                      |               11 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[13][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[17][15]_i_1_n_0                  |                                                      |               14 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[20][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[21][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[1][15]_i_1_n_0                   |                                                      |               11 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[22][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[23][15]_i_1_n_0                  |                                                      |               12 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[16][15]_i_1_n_0                  |                                                      |               14 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[24][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[0][15]_i_1_n_0                   |                                                      |                9 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[31][15]_i_1_n_0                  |                                                      |               13 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[38][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/y2_offi[29]_i_1_n_0                      | msemd/LED_OBUF[0]                                    |               10 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[39][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[32][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[27][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[36][15]_i_1_n_0                  |                                                      |               18 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[41][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[40][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[42][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[30][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[43][15]_i_1_n_0                  |                                                      |               17 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[44][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[45][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[28][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[2][15]_i_1_n_0                   |                                                      |               12 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[35][15]_i_1_n_0                  |                                                      |               16 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[3][15]_i_1_n_0                   |                                                      |               13 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[37][15]_i_1_n_0                  |                                                      |               21 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[33][15]_i_1_n_0                  |                                                      |               19 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[25][15]_i_1_n_0                  |                                                      |               15 |             64 |
+| ~clk6p25m_BUFG   | oledmd/state                                                          | msemd/LED_OBUF[0]                                    |               13 |             64 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/poly2_y[94][15]_i_1_n_0                  |                                                      |               15 |             64 |
+|  CLOCK_IBUF_BUFG | ryanmodule/u_click/saved_coef_a                                       |                                                      |               18 |             68 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/linreg_plot/sum_x[6]_i_1_n_0                     | msemd/LED_OBUF[0]                                    |               18 |             72 |
+|  CLOCK_IBUF_BUFG | vetrimodule/approxmd/linreg_plot/px1[6]_i_1_n_0                       |                                                      |               20 |             84 |
+| ~clk6p25m_BUFG   |                                                                       | oledmd/spi_word[39]_i_1_n_0                          |               21 |             90 |
+|  clk6p25m_BUFG   |                                                                       |                                                      |               35 |            116 |
+|  CLOCK_IBUF_BUFG | vetrimodule/plotmd/graph_mod/t2[31]_i_1_n_0                           | msemd/LED_OBUF[0]                                    |               22 |            128 |
+|  CLOCK_IBUF_BUFG |                                                                       |                                                      |               67 |            266 |
+|  CLOCK_IBUF_BUFG |                                                                       | msemd/LED_OBUF[0]                                    |               99 |            522 |
++------------------+-----------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+
